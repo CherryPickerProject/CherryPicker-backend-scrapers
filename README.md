@@ -30,6 +30,8 @@
 ### (4) Connecting to MongoDB Atlast
 * Please obtain .env file from @ooihuiying 
 
+### (5) Triggering Scrapers manually
+* Please make sure that you are on the same directory level as Scrapers, Data, Connect-Database folders before running the command `python Scrapers/<SCRAPERNAME>.py` 
 ## How to start development:
 ### Scrapers created
 * TagVenue
