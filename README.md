@@ -1,6 +1,6 @@
 # CherryPicker-backend
 
-## This repository contains the Scrapers for Event Venue Rental Websites
+## This repository contains the Scrapers for Event Venue Rental Websites. Scrapers will be run by AWS Lambda and cloudwatch which will then transfer data to MongoDB atlas
 
 ## Libraries used:
 * Requests
@@ -26,6 +26,15 @@
 * Whenever you download a new library, add it to requirements.txt by doing `pip freeze > requirements.txt`
 
 * Whenever you download a new library, add it to requirements.txt by doing `pip lock -r > requirements.txt`
+
+### (4) Connecting to MongoDB Atlast
+* Please obtain .env file from @ooihuiying 
+
+## How to start development:
+### Scrapers created
+* TagVenue
+* Venuerific
+* VenuExplorer
 
 ## Helpful links
 * https://github.com/pypa/pipenv/issues/4296
