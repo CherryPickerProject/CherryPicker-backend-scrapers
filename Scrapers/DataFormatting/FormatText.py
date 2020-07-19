@@ -16,14 +16,16 @@ def FormatSentence(sentence):
 # The start of each word is identified by (1) space
 # (2) starting bracket (3) Next char after -
 # This function also makes sure there is spacing around @ and -, if exist
-# This function fixes misaligned brackets and output will be (XY) instead of ( XY ) or (XY ) or ( XY)
+# This function fixes misaligned brackets and output will be (XY)
+# (XY) and ( XY ) are not considered misaligned brackets. (XY ) or ( XY) are considered misaligned.
 
 def FormatTitle(title):
     haveReplacedBrack = False
-
     if(not " ( " in title):
         haveReplacedBrack = True
         title = title.replace("(", " ( ")
+    if(not " ) " in title):
+        title = title.replace(")", ") ")
     if(not " - " in title):
         title = title.replace(
             "-", " - ")
@@ -37,5 +39,4 @@ def FormatTitle(title):
 
     if(haveReplacedBrack):
         newString = newString.replace("( ", "(").replace(" )", ")")
-
     return newString.strip()
