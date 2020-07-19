@@ -1,3 +1,6 @@
+# TODO: Once all scrapers has been finalised, this file will be shifted to DataFormatting folder.
+# roomName attr will also be removed.
+
 # Venue Class
 class Venue:
     venue = {}
