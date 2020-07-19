@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 from requests import get
 import VenueClass
 import json
-import sys
 from DataFormatting.FormatTime import FormatTime
 
 debug = False
