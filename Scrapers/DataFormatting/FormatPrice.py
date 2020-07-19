@@ -32,6 +32,7 @@ def FormatPrice(allPricing):
         pricing = priceObj["pricing"]
         time = priceObj["time"]
         if(not day in DAYS):
+            # inputs are assumed to be date range: XX - YY
             days = day.split("–")
             if(len(days) == 2):
                 start = days[0]
@@ -57,6 +58,7 @@ def FormatPrice(allPricing):
                         "time": time
                     })
                 except:
+                    # Unable to format data. Returning original.
                     allPricingWithAppendedObj.append(priceObj)
         else:
             allPricingWithAppendedObj.append(priceObj)

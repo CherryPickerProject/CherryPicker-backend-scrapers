@@ -64,7 +64,7 @@ def fix(time):
 
         return time.strip()
     except:
-        print("Error in formatting time"+str(time))
+        print("Error in formatting time "+str(time))
         return False
 
 
@@ -84,4 +84,4 @@ def FormatTime(time):
         return second+" - "+second
     elif(second == False):
         return first+" - "+first
-    return fix(time[0])+" - "+fix(time[1])
+    return first+" - "+second

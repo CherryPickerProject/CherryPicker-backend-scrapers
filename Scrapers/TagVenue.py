@@ -19,6 +19,7 @@ else:
 
 
 allVenues = []  # Array to store all Venues of type VenueClass
+visitedVenues = []
 
 
 def extractVenue(room, venueType):
@@ -47,6 +48,11 @@ def extractVenue(room, venueType):
 
     # Get Link
     link = room["room_url"]
+
+    if(link in visitedVenues):
+        return
+    else:
+        visitedVenues.append(link)
 
     # Request actual Link to entire page
     response = get(link)
